@@ -221,6 +221,10 @@ class Graphics2DPrint : public Graphics2D, public Print {
     }
     return 1;
   }
+  void clearFont(){
+    gfxFont = NULL;
+  }
+
   void setFont(const GFXfont *f) {
     if (f) {           // Font struct pointer passed in?
       if (!gfxFont) {  // And no current font struct?
