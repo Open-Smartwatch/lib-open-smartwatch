@@ -388,6 +388,25 @@ class Graphics2DPrint : public Graphics2D, public Print {
   void setTextBottomAligned() { text_y_alignment = _text_alignment::LEFT; }
   void setTextTopAligned() { text_y_alignment = _text_alignment::RIGHT; }
 
+  void setTextCursorBtn1() {
+    setTextSize(2);
+    setTextLeftAligned();    // vertical alignment
+    setTextMiddleAligned();  // horiztontal alignment
+    setTextCursor(30, 196);
+  }
+  void setTextCursorBtn2() {
+    setTextSize(2);
+    setTextRightAligned();   // vertical alignment
+    setTextMiddleAligned();  // horiztontal alignment
+    setTextCursor(210, 196);
+  }
+  void setTextCursorBtn3() {
+    setTextSize(2);
+    setTextRightAligned();   // vertical alignment
+    setTextMiddleAligned();  // horiztontal alignment
+    setTextCursor(210, 44);
+  }
+
   // set font options
   void clearFont() { setFont(nullptr); }
   void setFont(const GFXfont *f) { gfxFont = (GFXfont *)f; }
