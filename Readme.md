@@ -1,3 +1,8 @@
+# :pushpin: This repository is now archived...
+
+...because we merged it into the upstream OS. There is no point in keeping it separate anymore, as the OS itself can be cross-compiled now.
+We decied to still keep this repository online to allow you to still build older versions of the OS, which may still refer to this repository.
+
 # Lib Open-Smartwatch
 
 A library that handles maths, animations, conversions, and drawing.
